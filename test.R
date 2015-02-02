@@ -1,0 +1,16 @@
+> plot(X_2, col="red", xlim=c(-5,5),ylim=c(-5,5))
+> points(X_1, col="green")
+> plot(X_2, col="red", xlim=c(-5,5),ylim=c(-5,5))
+> 
+  > plot(X_2, bg="red", xlim=c(-5,5),ylim=c(-5,5))
+> plot(X_2, col="red", xlim=c(-5,5),ylim=c(-5,5))
+> points(X_1, col="blue")
+> require(graphics)
+> X=rbind(X_1,X_2)
+> kmeans(X,2)
+cl<-kmeans(X,2)
+
+X=rbind(X_1,X_2)
+> kmeans(X,2)
+cl<-kmeans(X,2)
+> plot(X, col = cl$cluster)
